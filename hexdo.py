@@ -24,9 +24,10 @@ def func_help():
 
 %sadd   -> %sadd "text here": To add a new task. Quotes mendatory 
 %srm    -> %srm <number>: Remove the line number X.
-%shelp  -> %sPrints this
+%shelp  -> %sPrints this. Can also use -h
 %sshow  -> %sPrints the todo list
-""" % (fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13)))
+%s-b    -> %sPrints the banner and shows list
+""" % (fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13)))
 
 ##########################################
 
@@ -91,3 +92,6 @@ elif sys.argv[1] == "show":
 elif sys.argv[1] == "-b":
     func_ascii()
     func_show()
+
+elif sys.argv[1] == "help" or sys.argv[1] == "-h":
+    func_help()
