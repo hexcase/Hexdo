@@ -22,11 +22,11 @@ def func_ascii():
 def func_help():
     print("""%sHexdo usage:
 
-%sadd   -> %sadd "text here": To add a new task. Quotes mendatory 
+%sadd   -> %sadd "text here": To add a new task. Quotes mendatory. 
 %srm    -> %srm <number>: Remove the line number X.
-%shelp  -> %sPrints this. Can also use -h
-%sshow  -> %sPrints the todo list
-%s-b    -> %sPrints the banner and shows list
+%shelp  -> %sPrints this. Can also use -h.
+%sshow  -> %sPrints the todo list.
+%s-b    -> %sPrints the banner and shows list.
 """ % (fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13), fg("cyan"), fg(13)))
 
 ##########################################
